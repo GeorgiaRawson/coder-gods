@@ -1,4 +1,36 @@
+:root {
+--mainColor: #557FB8;
+--secondaryColor: #EA8473; 
+--backgroundColor: #101418;
+}
 * {
     border: 0;
     margin: 0;
+}
+
+.hero img {
+   width: 100vw;
+   height: auto;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+}
+   
+h1, p {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 5px;
+    background-color: var(--backgroundColor);
+    color: azure;
+    padding: 15px;
+    border-radius: 6px;
 }
