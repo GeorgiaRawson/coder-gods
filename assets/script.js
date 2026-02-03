@@ -29,16 +29,17 @@ searchButton.addEventListener("click", sendFetchRequest);
 
 songsFromGenre = document.createElement("ul");
 
-searchDiv = document.querySelector(".search");
+searchDiv = document.querySelector(".widget");
 
 searchDiv.append(songsFromGenre);
 
 function getSongs(tracks) {
+  songsFromGenre.replaceChildren();
   for (let i = 0; i < 5; i++) {
     song = tracks[i];
     console.log(song);
     const songLi = document.createElement("li");
     songLi.textContent = song.name;
-    searchDiv.append(songLi);
+    songsFromGenre.appendChild(songLi);
   }
 }

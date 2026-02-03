@@ -1,36 +1,40 @@
 :root {
---mainColor: #557FB8;
---secondaryColor: #EA8473; 
---backgroundColor: #101418;
+  --mainColor: #557fb8;
+  --secondaryColor: #ea8473;
+  --backgroundColor: #101418;
+  font-family: sans-serif;
 }
 * {
-    border: 0;
-    margin: 0;
+  border: 0;
+  margin: 0;
 }
 
-.hero img {
-   width: 100vw;
-   height: auto;
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
+body {
+  background-color: #101418;
+  color: white;
+}
+.hero .logo {
+  padding-top: 2rem;
+  background-image: url("./img/logotransp.png");
+  width: 500px;
+  height: 500px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s ease-in-out;
 }
 
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
- 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-   
-h1, p {
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    font-size: 50px;
-    margin-top: 5px;
-    background-color: var(--backgroundColor);
-    color: azure;
-    padding: 15px;
-    border-radius: 6px;
+
+.function {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(2px 20px 50px rgb(0, 0, 0));
 }
