@@ -1,3 +1,8 @@
+:root {
+--mainColor: #557FB8;
+--secondaryColor: #EA8473; 
+--backgroundColor: #101418;
+}
 * {
     border: 0;
     margin: 0;
