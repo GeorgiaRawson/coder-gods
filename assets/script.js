@@ -21,7 +21,8 @@ function sendFetchRequest() {
     })
     .catch((error) => console.error("Fetch error:", error));
 }
-
+//sdd
+const x = 2;
 searchButton = document.getElementById("searchButton");
 
 searchButton.addEventListener("click", sendFetchRequest);
