@@ -10,7 +10,7 @@
 
 .hero img {
    width: 100vw;
-   height: ;
+   height: auto;
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
