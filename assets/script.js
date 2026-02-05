@@ -26,11 +26,7 @@ searchButton = document.getElementById("searchButton");
 
 searchButton.addEventListener("click", sendFetchRequest);
 
-songsFromGenre = document.createElement("ul");
-
-searchDiv = document.querySelector(".search");
-
-searchDiv.append(songsFromGenre);
+recommendations = document.getElementById("recommendations");
 
 function getSongs(tracks) {
   for (let i = 0; i < 5; i++) {
@@ -38,6 +34,6 @@ function getSongs(tracks) {
     console.log(song);
     const songLi = document.createElement("li");
     songLi.textContent = song.name;
-    searchDiv.append(songLi);
+    recommendations.appendChild(songLi);
   }
 }
