@@ -26,18 +26,18 @@ searchButton = document.getElementById("searchButton");
 
 searchButton.addEventListener("click", sendFetchRequest);
 
-songsFromGenre = document.createElement("ul");
-
-searchDiv = document.querySelector(".search");
-
-searchDiv.append(songsFromGenre);
+recommendations = document.getElementById("recommendations");
 
 function getSongs(tracks) {
   for (let i = 0; i < 5; i++) {
     song = tracks[i];
     console.log(song);
     const songLi = document.createElement("li");
-    songLi.textContent = song.name;
-    searchDiv.append(songLi);
+    songLi.textContent = song.name + " - " + song.artist.name + " | ";
+    const songUrl = document.createElement("a"); 
+    songUrl.href = song.url;
+    songUrl.textContent = "Listen here!";
+    songLi.append(songUrl);
+    recommendations.appendChild(songLi);
   }
 }
