@@ -33,7 +33,11 @@ function getSongs(tracks) {
     song = tracks[i];
     console.log(song);
     const songLi = document.createElement("li");
-    songLi.textContent = song.name;
+    songLi.textContent = song.name + " - " + song.artist.name + " | ";
+    const songUrl = document.createElement("a"); 
+    songUrl.href = song.url;
+    songUrl.textContent = "Listen here!";
+    songLi.append(songUrl);
     recommendations.appendChild(songLi);
   }
 }
