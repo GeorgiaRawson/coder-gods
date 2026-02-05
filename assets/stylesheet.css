@@ -4,6 +4,7 @@
 --backgroundColor: #101418;
 }
 * {
+    font-family: "Noto Family", Arial, Helvetica, sans-serif;
     border: 0;
     margin: 0;
 }
@@ -33,7 +34,6 @@
 }
    
 p {
-    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     margin-top: 5px;
     background-color: var(--backgroundColor);
@@ -42,18 +42,17 @@ p {
 }
 
 .search, .widget {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
+    font-size: 15px;
     text-align: center;
     background-color: var(--backgroundColor);
     color: azure;
-    padding: 15px;
+    padding: 20px;
     width: 100vw;
 }
 
 button {
     background-color: var(--mainColor);
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 6px;
     cursor: pointer;
 }
@@ -63,7 +62,7 @@ button:hover {
 
 input {
     background-color: var(--mainColor);
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 6px;
     color:azure; 
 }
